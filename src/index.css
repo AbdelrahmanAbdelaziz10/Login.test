@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  /* --primary-color: #1565c0; */
+  /* --primary-color: #6a7a6a; */
+  /* --primary-color: #0b455b; */
+  --primary-color: #0c5a79;
+  --primary-hover: #364b36;
+  --srTotal-header: #157091;
+  --srOverDue-header: #0e89b2;
+  --srDueToday-header: #e9c46a;
+  --srExtend-navBar: #1c7ea1;
+  --srExtend-navBar2: #0c7a8b;
+
+
+}
