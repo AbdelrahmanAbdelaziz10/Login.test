@@ -40,7 +40,7 @@ const LoginPage = () => {
     try {
       // 1️⃣ Login → ينشئ session
       const loginRes = await fetch(
-        `http://192.168.0.73:9080/maximo/oslc/LOGIN?_lid=${encodeURIComponent(
+        `http://emasfm.maxcafm.com:9080/maximo/oslc/LOGIN?_lid=${encodeURIComponent(
           username
         )}&_lpwd=${encodeURIComponent(passwordClean)}`,
         {
@@ -55,7 +55,7 @@ const LoginPage = () => {
 
       // 2️⃣ whoami → جلب بيانات المستخدم الحقيقي
       const whoamiRes = await fetch(
-        "http://192.168.0.73:9080/maximo/oslc/whoami",
+        "http://emasfm.maxcafm.com:9080/maximo/oslc/whoami",
         {
           method: "GET",
           credentials: "include",
@@ -92,7 +92,7 @@ const LoginPage = () => {
 navigate("/home", { replace: true });
     } catch (err) {
       console.error("Login error:", err);
-      setError("Invalid username or password catch 4");
+      setError("Invalid username or password ");
     } finally {
       setIsLoading(false);
     }
